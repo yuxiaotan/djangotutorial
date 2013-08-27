@@ -1,0 +1,13 @@
+Create Project: django-admin.py startproject (projectname)
+Run Server: python manage.py runserver (IP:Portnumber - not nece)
+Database Setup: (sitename)/settings.py. Set Engine, Name, User, Password, Host
+Create Databases: python manage.py syncdb
+Create Apps: python manage.py startapp polls
+Create Models:(projectname)/models.py
+Include Apps: (sitename)/settings.py, in Installed Apps section, add 'appname'
+Look at SQL: python manage.py sql (appname)
+	subsidaries: validate, sqlcustom (appname), sqlclear (appname), sqlindexes (Polls), sqlall (polls)
+Use python/django shell: python manage.py shell
+	Things to do: 	1) explicitly call .save() on vars
+					2) Modelname.objects.all()
+					3) fix up __unicode__ (tostring pretty much)
